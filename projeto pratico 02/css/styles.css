@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html, body{
+    height: 100%;
+}
+
+/*div gerais!*/
+
+.container{
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.clear{
+    clear: both;
+}
+
+/****header geral*****/
+header{
+    background-color: rgb(220, 220, 220);
+    padding:10px 2% 40px 2%;
+}
+
+.logo1{
+    float: left;
+    width: 110px;
+    height: 80px;
+    background-image: url(../img/logo2.png);
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*background-color: purple;*/
+}
+
+.logo2{
+    float: right;
+    width: 110px;
+    height: 80px;
+    background-image: url(../img/logo1.png);
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*background-color: green;*/
+}
+
+section.cover-form{
+    width: 100%;
+}
+
+.bg{
+    position: relative;
+    height: 560px;
+    background-position: center;
+    background-image: url(../img/img4.jpg);
+}
+
+.form-container{
+    position: absolute;
+    right: 30px;
+    top: -2.5%;
+    width: 400px;
+    height: 105%;
+    box-shadow: 2px 2px 1px 1px rbga(180, 180, 180, 0.5);
+    background-color: rgba(270, 270, 270, 0.5);
+}
+
+.form-container h2 {
+    font-weight: normal;
+    padding: 25px 15px;
+    color: black;
+    font-size: 18px;
+    background-color: rgba(210, 210, 210, 0.5);
+}
+
+.form-container form{
+    margin-top: 20px;
+    padding: 15px;
+}
+
+.form-container form p{
+    font-size: 14px;
+    color: #525252;
+}
+
+.form-wraper:not(:first-child){
+    margin-top: 40px;
+}
+
+.form-wraper:last-child{
+    margin-top: 20px;
+}
+
+.form-container form input[type=text]{
+    width: 100%;
+    border: 1px solid rgba(270, 270, 270, 0.5);
+    height: 45px;
+    line-height: 45px;
+    padding-left: 10px;
+    background-color: rgba(270, 270, 270, 0.5);
+}
+
+.form-container form input[type=submit]{
+    background-color: #033C50;
+    text-transform: uppercase;
+    color: white;
+    width: 100%;
+    font-size: 25px;
+    height: 30px;
+    cursor: pointer;
+    border: 0;
+    height: 50px;
+}
+
+section.chamada{
+    width: 100%;
+    text-align: center;
+}
+
+.icone-seta{
+    z-index: 2;
+    position: relative;
+    left: 50%;
+    top: -60px;
+    transform: translatex(-50%,);
+    -ms-transform: translatex(-50%,);
+    width: 64px;
+    height: 64px;
+    background-size: 100% 100%;
+    background-image: url(../img/arrow1.png);
+}
+
+section.chamada .container{
+    padding: 30px 0 60px 0;
+    /*background-color: #2EFE9A;*/
+    background-color: #04063B;
+}
+
+section.chamada h2{
+    width: 98%;
+    max-width: 700px;
+    display: inline-block;
+    color: white;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+section.chamada h4{
+    width: 98%;
+    max-width: 700px;
+    display: inline-block;
+    color: white;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+/***mosaico***/
+
+.flex-mosaico{
+    display: flex;
+}
+
+.item-1-mosaico{
+    background-position: center;
+    background-size: cover;
+    width:60%;
+}
+
+.item-2-mosaico{
+    background-color: #2b4d64;
+    padding:60px 40px;
+    width: 40%;
+}
+
+.item-2-mosaico p{
+    color: white;
+}
+
+footer{
+    text-align: center;
+    padding: 20px 0;
+    background-color: #04063B;
+    color: white;
+}
+
+footer p{
+    margin-top: 8px;
+}
+
+footer img{
+    width:120px;
+    display: inline-block;
+}
+
+footer.container{
+    width: 100%;
+    max-width: 1100px;
+}
+
+
+@media screen and (max-width: 960px){
+    .bg{
+        height: auto;
+        padding: 60px 0;
+        text-align: center;
+        background-color: #04063B;
+    }
+
+    .form-container{
+        width: 96%;
+        height: auto;
+        max-width: 400px;
+        position: static;
+        display: inline-block;
+    }
+
+    .icone-seta{
+        left: 46%;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    .flex-mosaico{
+        display: block;
+    }
+
+    .item-1-mosaico{
+        padding-top: 65%;
+        width: 100%;
+    }
+
+    .item-2-mosaico{
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 510px) {
+
+    header{
+        text-align: center;
+    }
+
+    .logo1, .logo2{
+        margin-top: 10px;
+        display: inline-block;
+        float: none;
+    }
+
+}
